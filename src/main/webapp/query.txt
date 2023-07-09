@@ -1,0 +1,23 @@
+create table member (
+	userID varchar(20) not null,
+	userPassword varchar(20),
+	userName varchar(20),
+	userSex varchar(20),
+	userEmail varchar(50),
+	primary key (userID)
+);
+
+insert into MEMBER 
+values
+('gildong', '123456', '홍길동', 'man', 'glidong@naver.com');
+
+
+create table bbs (
+	bbsid int,
+	bbstitle varchar(50),
+	userid varchar(20),
+	bbsdate varchar(50),
+	bbscontent varchar(2048),
+	bbsdel int,
+	primary key (bbsid)
+);
